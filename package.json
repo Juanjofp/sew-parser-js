@@ -1,0 +1,39 @@
+{
+  "name": "@sensoreverywhere/sew-parser",
+  "version": "0.0.2",
+  "description": "Frames parser module for sensor every where platform",
+  "main": "build/index.js",
+  "scripts": {
+    "build": "babel src -d build",
+    "prepublish": "npm run build",
+    "start-server": "cd src && babel-node main.js",
+    "start": "cd src && nodemon main.js --exec babel-node",
+    "test": "jest --watchAll",
+    "test-ci": "jest",
+    "eslint": "eslint src"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SensorEveryWhere/sew-parser.git"
+  },
+  "keywords": [
+    "sew",
+    "sensor-every-where",
+    "rabbitmq"
+  ],
+  "author": "Juanjo Franco, Francesco Rivola",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/SensorEveryWhere/sew-parser/issues"
+  },
+  "homepage": "https://github.com/SensorEveryWhere/sew-parser#readme",
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-eslint": "^10.0.1",
+    "babel-jest": "^23.6.0",
+    "babel-preset-env": "^1.7.0",
+    "eslint": "^6.0.0",
+    "jest": "^23.6.0",
+    "nodemon": "^1.18.9"
+  }
+}
